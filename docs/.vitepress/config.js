@@ -7,7 +7,6 @@ module.exports = {
     markdown: {
         lineNumbers: false
     },
-
     themeConfig: {
         repo: 'musonza/aws-terraform-by-example-guide',
         docsDir: 'docs',
@@ -30,7 +29,23 @@ module.exports = {
             '/guide/': getGuideSidebar(),
             '/': getGuideSidebar()
         }
-    }
+    },
+    head: [
+        [
+            'script',
+            {
+                async: true,
+                src: 'https://www.googletagmanager.com/gtag/js?id=G-7P23Q59LRC',
+            },
+        ],
+        [
+            'script',
+            {},
+            [
+                "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-7P23Q59LRC');",
+            ],
+        ],
+      ],
 }
 
 function getGuideSidebar() {
