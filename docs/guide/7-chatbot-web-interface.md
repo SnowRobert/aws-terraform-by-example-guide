@@ -234,7 +234,7 @@ bash-3.2$ terraform console
 {
   "allow_classic_flow" = false
   "allow_unauthenticated_identities" = true
-  "arn" = "arn:aws:cognito-identity:us-east-1:082920454967:identitypool/us-east-1:a1e0d5a9-e1f4-4bbf-b383-cf92aa462b5b"
+  "arn" = "arn:aws:cognito-identity:us-east-1:xxxxxxxxxx:identitypool/us-east-1:a1e0d5a9-e1f4-4bbf-b383-cf92aa462b5b"
   "cognito_identity_providers" = toset([])
   "developer_provider_name" = ""
   "id" = "us-east-1:a1e0d5a9-e1f4-4bbf-b383-cf92aa462b5b"
@@ -365,4 +365,8 @@ Initializing the backend...
 │
 ```
 
-So make sure to head to the AWS console, create a unique bucket (must be unique across all bucket names in AWS), and re-run the init command.
+So make sure to head to the AWS console, create a unique bucket (must be unique across all bucket names in AWS), and re-run the init command. Alternatively, you can use the AWS cli to create the bucket as below:
+
+```shell
+aws s3 mb s3://YOUR_BUCKET_NAME
+```
