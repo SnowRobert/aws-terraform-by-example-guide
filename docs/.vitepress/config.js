@@ -48,7 +48,6 @@ function getGuideSidebar() {
                 { text: 'Chatbot Web Interface', link: '/guide/7-chatbot-web-interface' },
                 { text: 'Template files', link: '/guide/8-template-files-refactor'},
                 { text: 'Introducing Cloud9', link: '/guide/9-introducing-cloud9' },
-                { text: 'S3 Static Site hosting', link: '/guide/10-s3-static-site-hosting' },
             ]
         }
     ]
