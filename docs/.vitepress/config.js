@@ -3,7 +3,6 @@ module.exports = {
     title: 'AWS and Terraform by example',
     description: 'AWS and Terraform by example',
     lastUpdated: true,
-
     markdown: {
         lineNumbers: false
     },
@@ -28,7 +27,19 @@ module.exports = {
         sidebar: {
             '/guide/': getGuideSidebar(),
             '/': getGuideSidebar()
-        }
+        },
+
+        head: [
+            [
+              'script',
+              { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-7P23Q59LRC' }
+            ],
+            [
+              'script',
+              {},
+              "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-7P23Q59LRC');"
+            ]
+          ],
     }
 }
 
