@@ -32,14 +32,14 @@ module.exports = {
         head: [
             [
               'script',
-              { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-7P23Q59LRC' }
+              { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-1XGVBET7W0' }
             ],
             [
               'script',
               {},
-              "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-7P23Q59LRC');"
+              "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-1XGVBET7W0');"
             ]
-          ],
+        ],
     }
 }
 
