@@ -1,6 +1,6 @@
 # Template files
 
-You may have noticed code that similar to the following:
+You may have noticed code that is similar to the following:
 
 ```hcl
 # IAM role to use with authenticated identities
@@ -228,7 +228,7 @@ resource "aws_cognito_user_pool" "classifieds" {
 }
 ```
 
-Make updates to lambda.tf file.
+Make updates to `lambda.tf` file.
 
 `/lambda.tf`
 
