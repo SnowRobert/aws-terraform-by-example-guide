@@ -41,3 +41,40 @@ const region = '<REGION>' // example: us-east-1
 Navigating to the dev URL, you will see your UI and will be able to interact with your chatbot.
 
 ![lex ui](../images/separate-lex-ui.png)
+
+## Terraform Output Values
+
+Earlier, we used Terraform console to get the `poolId`. What if you want to get a bunch of resource properties at once? It would be tedious to run each one by one in the console. An alternative is to use Output values. Output values make information about your infrastructure available on the command line. Additionally, Output values can expose information for other Terraform configurations to use. Output values are similar to return values in a programming language.
+
+### Declare Output Values
+
+To export Output values, they must be declared using an output block.
+
+Create a file `outputs.tf` in the root of your Terraform project and add the following:
+
+```hcl
+output "cognito_identity_pool_id" {
+  value = aws_cognito_identity_pool.main.id
+}
+```
+
+:::info
+It's worth noting that Outputs will only be rendered when Terraform applies a plan. So running `terraform plan` will not render outputs.
+:::
+
+Too see the outputs run `terraform destroy` first.
+
+Then run `terraform apply -auto-approve`.
+
+You should see the following, with `cognito_identity_pool_id` in the outputs.
+
+```bash
+aws_lex_bot.classifieds: Still creating... [10s elapsed]
+aws_lex_bot.classifieds: Creation complete after 14s [id=Classifieds]
+
+Apply complete! Resources: 20 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+cognito_identity_pool_id = "us-east-1:ec1bbb2a-8345-4f3b-af99-dbdc607ac50d"
+```
