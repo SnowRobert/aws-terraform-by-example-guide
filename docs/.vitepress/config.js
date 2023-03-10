@@ -14,6 +14,10 @@ module.exports = {
         editLinkText: 'Edit this page on GitHub',
         lastUpdatedText: 'Last Updated',
 
+        nav: [
+            { text: 'Blog', link: 'https://musonza.dev' }
+        ],
+
         socialLinks: [
             { icon: 'github', link: 'https://github.com/musonza/aws-terraform-by-example-guide' },
             { icon: 'linkedin', link: 'https://linkedin.com/in/srfullstackdeveloper' },
