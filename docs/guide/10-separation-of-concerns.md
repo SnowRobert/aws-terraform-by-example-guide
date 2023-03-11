@@ -16,7 +16,11 @@ Clone the repository to use for UI in another location on your machine:
 git clone git@github.com:musonza/aws-terraform-by-example-lex-ui.git
 ```
 
-1. Make the following updates to add your poolId to `src/main.js`.
+```shell
+git checkout lesson-1
+
+cp config/example.env.js config/env.js
+```
 
 Obtain the poolId by running:
 
@@ -25,12 +29,15 @@ terraform console
 resource.aws_cognito_identity_pool.main.id
 ```
 
-_src/main.js_
+1. Update _config/env.js_
+
+Example
 
 ```js
 // ...
-const poolId = '<YOUR_POOL_ID_HERE>' // example: 'us-east-1:738de87b-0fac-4460-bba5-47c2a3467ff6'
-const region = '<REGION>' // example: us-east-1
+  AWS_REGION: '"us-east-1"',
+  POOLID: '"us-east-1:746dx87b-0fac-4560-bba5-47c2a3467ff6"',
+  BOT_NAME: '"Classifieds"',
 // ...
 ```
 

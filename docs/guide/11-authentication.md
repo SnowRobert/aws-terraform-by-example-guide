@@ -25,3 +25,5 @@ Setting `allow_unauthenticated_identities` to `false` can make it easier to inte
 Overall, many good reasons exist to set `allow_unauthenticated_identities` to `false`. First, by requiring authentication before accessing your AWS resources, you can better protect your resources, manage your users, and customize the user experience.
 
 :::
+
+## Disallow aunthenticated users
