@@ -26,4 +26,4 @@ Overall, many good reasons exist to set `allow_unauthenticated_identities` to `f
 
 :::
 
-## Disallow aunthenticated users
+## Disallow unauthenticated users
