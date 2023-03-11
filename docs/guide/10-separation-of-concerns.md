@@ -65,7 +65,7 @@ output "cognito_identity_pool_id" {
 }
 ```
 
-:::info
+:::warning
 It's worth noting that Outputs will only be rendered when Terraform applies a plan. So running `terraform plan` will not render outputs.
 :::
 

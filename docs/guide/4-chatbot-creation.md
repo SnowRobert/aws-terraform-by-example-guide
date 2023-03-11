@@ -41,7 +41,7 @@ Running the plan command, you should expect an error similar to below
 │ At least 1 "intent" blocks are required.
 ```
 
-I intentionally omitted some required arguments to show that Terraform will perform necessary validations on the resources we intend to create, so let's fix that. Amazon Lex requires us to define at least an intent (goal) for our users that use the bots. Lex will use a specific intent to engage a user in a conversation to elicit information and fulfill the user's intent/goal. For example, a user can have an intent to book a flight, order flowers, etc. It's worth noting that a single bot can have multiple different intents.
+I intentionally omitted some required arguments to show that Terraform will return validation errors on the resources we intend to create, so let's fix that. Amazon Lex requires us to define at least an intent (goal) for our users that use the bots. Lex will use a specific intent to engage a user in a conversation to elicit information and fulfill the user's intent/goal. For example, a user can have an intent to book a flight, order flowers, etc. It's worth noting that a single bot can have multiple different intents.
 
 Our bot is going to contain four intents to start. The intents will be as follows:
 
