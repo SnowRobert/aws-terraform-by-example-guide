@@ -29,6 +29,8 @@ resource "aws_dynamodb_table" "classifieds" {
 
 We have declared a DynamoDB table named `Classifieds`. We will use provisioned billing mode, so we need the read and write capacity specified ahead of time. Our hash key is going to be the post identifier `PostId`. Since this is a NoSQL database, we don't necessarily have to specify additional attributes like `PostTitle` and `PostDescription`.
 
+We will revisit DynamoDB in detail later on, and this is not our final structure in terms of keys. DynamoDB requires enough thought on access patterns to be efficient. So we will have another section where we go over our access patterns.
+
 You can run `terraform plan` to see what will be provisioned. You should see an output similar to below.
 
 ```hcl
