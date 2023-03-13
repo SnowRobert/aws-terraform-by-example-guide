@@ -26,7 +26,7 @@ Overall, many good reasons exist to set `allow_unauthenticated_identities` to `f
 
 :::
 
-## Disallow aunthenticated users
+## Disallow unauthenticated users
 
 In your Terraform project, go to `cognito.tf` and update your `aws_cognito_identity_pool` resource by setting `allow_unauthenticated_identities` to `false` as below
 
